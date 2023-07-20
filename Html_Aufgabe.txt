@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IT Nachrichten</title>
+  <meta name="description" content="Aktuelle IT-Nachrichten und Trends">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>IT Nachrichten</h1>
+  </header>
+  
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Startseite</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hauptinhalt -->
+  <main>
+    <!-- Für jede Nachricht könnte ein Artikel-Tag verwendet werden -->
+    <article>
+      <h2>Titel der Nachricht</h2>
+      <p>Inhalt der Nachricht...</p>
+    </article>
+    <!-- Weitere Artikel können hier hinzugefügt werden -->
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2023 IT Nachrichten</p>
+  </footer>
+</body>
+</html>
+
+/* Allgemeine Stile */
+body {
+  font-family: Arial, sans-serif; /* Nutzen Sie eine einfache und klare Schriftart */
+  margin: 0; /* Entfernen Sie den Standardrand um den Körper */
+  padding: 0; /* Entfernen Sie das Standardpolster um den Körper */
+  background-color: #F2F2F2; /* Setzen Sie eine helle Hintergrundfarbe */
+}
+
+/* Header-Stile */
+header {
+  background-color: #333; /* Dunkle Hintergrundfarbe für den Kontrast */
+  color: white; /* Weiße Schriftfarbe */
+  padding: 10px 0; /* Fügen Sie oben und unten Polster hinzu */
+  text-align: center; /* Zentrieren Sie den Text */
+}
+
+/* Navigation-Stile */
+nav {
+  background-color: #EEE; /* Leichte Hintergrundfarbe */
+}
+
+nav ul {
+  list-style-type: none; /* Entfernen Sie die Aufzählungszeichen */
+  padding: 0; /* Entfernen Sie das Standardpolster */
+}
+
+nav ul li {
+  display: inline; /* Machen Sie die Listenpunkte nebeneinander */
+  margin-right: 10px; /* Fügen Sie rechts einen Rand hinzu */
+}
+
+nav ul li a {
+  text-decoration: none; /* Entfernen Sie die Unterstreichung */
+  color: #333; /* Dunkle Schriftfarbe */
+}
+
+/* Hauptinhalt-Stile */
+main {
+  padding: 20px; /* Fügen Sie Polster hinzu */
+}
+
+article {
+  margin-bottom: 20px; /* Fügen Sie unten einen Rand hinzu */
+}
+
+article h2 {
+  color: #333; /* Dunkle Schriftfarbe */
+}
+
+/* Footer-Stile */
+footer {
+  background-color: #333; /* Dunkle Hintergrundfarbe */
+  color: white; /* Weiße Schriftfarbe */
+  text-align: center; /* Zentrieren Sie den Text */
+  padding: 10px 0; /* Fügen Sie oben und unten Polster hinzu */
+  position: fixed; /* Fußzeile am unteren Rand fixieren */
+  width: 100%; /* Fußzeile auf volle Breite setzen */
+  bottom: 0; /* Fußzeile nach ganz unten schieben */
+}
+

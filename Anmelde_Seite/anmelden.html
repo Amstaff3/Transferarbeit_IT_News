@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../style.css"> <!-- Style für Navigation -->
+  <link rel="stylesheet" href="anmelde_style.css"> <!-- Style für Anmeldeseite -->
+  <title>Anmeldung</title>
+</head>
+<body>
+  <nav>
+        <ul>
+            <li><a href="../Nachrichten.html">Startseite</a></li>
+            <li><a href="../kategorien.html">Nachrichtenkategorien</a></li>
+            <li><a href="../Blog/blog.html">Blog</a></li>
+            <li>
+                <a href="#">Infos :D</a> <!-- Dropdown-Button -->
+                <ul class="dropdown-menu">
+                    <li><a href="../Info/ueber_uns.html">Über uns</a></li>
+                    <li><a href="../Info/kontakt.html">Kontakt</a></li>
+                    <li><a href="../Info/datenschutz.html">Datenschutz</a></li>
+                </ul>
+            </li>
+            <li><a href="../Anmelde_Seite/anmelden.html">Anmelden/Registrieren</a></li>
+        </ul>
+    </nav>
+
+    <div class="logo">
+        <img src="img/logo (Telefon).png">
+    </div>
+
+    <h1>Transferarbeit Teko Webseite</h1>
+
+    <div class="main-wrapper">
+        <form id="loginFrom">
+            <h2>Login</h2>
+
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" id="login_email" placeholder="teko.teko@edu.teko.ch">
+            </div>
+
+            <div>
+                <label>Passwort:</label>
+                <input type="password" name="Passwort" id="login_passwort" placeholder="******"> 
+            </div>
+
+            <div>
+                <button>Anmelden</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="no-acc-register">
+        <p>kein User?</p>
+        <button id="registracija">Registriere dich!</button>
+    </div>
+
+    <div class="custom-modal">
+        <button id="closeModal">X</button>
+
+        <form id="registrationForm">
+            <h2>Anmelden</h2>
+
+            <div>
+                <label for="korisnicko_ime">User Name: *</label>
+                <input id="user_name" type="text" name="korisnicko_ime" placeholder="teko.tekolic1">
+            </div>
+
+            <div>
+                <label for="email">Email Adresse: *</label>
+                <input id="email" type="email" name="register_email" placeholder="teko.teko@edu.teko.ch">
+            </div>
+
+            <div>
+                <label for="lozinka">Passwort: *</label>
+                <input id="lozinka" type="password" name="register_lozinka" placeholder="*******">
+            </div>
+
+            <div>
+                <label for="ponovi_lozinku">wiederhole Passwort: *</label>
+                <input id="ponovi_lozinku" type="password" name="register_lozinka" placeholder="*******">
+            </div>
+
+            <div>
+                <button> Registriere dich</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/Validator.js"></script>
+    <script src="js/1_app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+Instalation von Mongodb über Docker 
+docker pull mongo
+
+Starten mit 
+docker run -d -p 27017:27017 -v ~/data:/data/db --name mongodb mongo
+
+
+MongoDB-Server in einem Docker-Container starten:
+
+1. Öffnen Terminal und ziehe offizielle MongoDB-Image von Docker Hub mit dem folgenden Befehl:
+   ```
+   docker pull mongo
+   ```
+2. Starten einen neuen Docker-Container mit MongoDB-Image.
+   ```
+   docker run -d -p 27017:27017 -v ~/data:/data/db --name mongodb mongo
+   ```
+   Befehl startet einen neuen Container im Hintergrund (`-d`) und leitet den Port 27017 des Containers an den Port 27017 Ihres Host-Systems weiter (`-p 27017:27017`). 
+   Ein Volume wird erstellt, um die MongoDB-Daten in einem Verzeichnis auf Ihrem Host-System zu speichern (`-v ~/data:/data/db`).
+
+3. Nun kann man von Node.js-Anwendung aus auf den MongoDB-Server zugreifen, indem Sie `mongodb://localhost:27017` als Verbindungs-URI verwenden. 
+(Info: Wenn Sie eine Verbindung von ausserhalb Ihres Host-Systems herstellen möchten, müssen Sie `localhost` durch die IP-Adresse Ihres Host-Systems ersetzen.)
+
+Um den MongoDB-Container zu stoppen, können Sie den Befehl `docker stop mongodb` verwenden und mit `docker start mongodb` wieder starten. 
+
+Stellen Sie sicher, dass Docker läuft, bevor Sie versuchen, Docker-Befehle auszuführen. Die Befehle können je nach Betriebssystem variieren.
