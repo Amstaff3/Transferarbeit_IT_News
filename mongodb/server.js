@@ -3,21 +3,24 @@ const mongoose = require('mongoose');
 
 const app = express();
 
-// JSON parsing middleware
+// JSON-Middleware
 app.use(express.json()); 
 
-// Connect to MongoDB
+// Verbindung zu MongoDB
 mongoose.connect('mongodb://localhost:27017/mydatabase', { useNewUrlParser: true });
 
-// Load routing files
-const anmeldenRoute = require('./routes/anmelden');
+// Routing-Dateien laden
+const anmeldenRoute = require('./router/anmelde'); // Änderung des Namens
 
-// Use routing files 
+// Routing-Dateien verwenden
 app.use('/anmelden', anmeldenRoute);
 
+// Server auf Port 3000 starten
 app.listen(3000, () => {
-  console.log('Server listening on port 3000');
+  console.log('Server hört auf Port 3000');
 });
+
+
 
 /*
 const express = require('express');
