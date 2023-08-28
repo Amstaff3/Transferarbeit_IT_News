@@ -32,6 +32,26 @@
 
   <!-- Hauptinhalt -->
   <main id="nachrichten">
+    <iframe src="https://scheible.it/" name="iFrame Name" width="100%" height="300" scrolling="no" marginwidth=“2“ frameborder=“0“></iframe>
+  </main>
+
+  <main id="nachrichten">
+    <iframe src="https://www.security-insider.de/hackerangriffe-auf-microsoft-teams-a-41095ff746cd55e1523bce5de20e7604/?cmp=nl-36&uuid=" name="iFrame Name" width="100%" height="300" align="center" scrolling="no" marginwidth=“2“ frameborder=“0“></iframe>
+  </main>
+
+  <main id="nachrichten">
+    <iframe src="http://www.beispiel.de/iframe.html" name="iFrame Name" width="100%" height="300" align="center" scrolling="no" marginwidth=“2“ frameborder=“0“></iframe>
+  </main>
+
+  <main id="nachrichten">
+    <iframe src="http://www.beispiel.de/iframe.html" name="iFrame Name" width="100%" height="300" align="center" scrolling="no" marginwidth=“2“ frameborder=“0“></iframe>
+  </main>
+
+  <main id="nachrichten">
+    <iframe src="http://www.beispiel.de/iframe.html" name="iFrame Name" width="100%" height="300" align="center" scrolling="no" marginwidth=“2“ frameborder=“0“></iframe>
+  </main>
+
+  <main id="nachrichten">
     <!-- Nachrichten dynamisch laden -->
   </main>
 
@@ -44,6 +64,19 @@
   <footer>
     <p>© 2023 IT Nachrichten | <a href="impressum.html">Impressum</a></p>
   </footer>
+
+    <!-- Ihr JavaScript-Code -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        fetch('https://www.hmmmm.hmmm/news/')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('nachrichten').innerHTML = data;
+          })
+          .catch((error) => console.error('Es gab ein Problem:', error));
+      });
+    </script>
+
 </body>
 </html>
 
