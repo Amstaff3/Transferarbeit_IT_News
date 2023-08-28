@@ -92,8 +92,10 @@ body {
     text-decoration: underline;
   }
    /* Blog Bilder */
-   .responsive-img {
-    max-width: 100%;
+  .responsive-img {
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
     height: auto;
   }
   /* Kategorien Kacheln und Farbe */
