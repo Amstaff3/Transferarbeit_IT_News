@@ -8,28 +8,11 @@
 body {
   font-family: sans-serif;
   padding: 50px;
-  background-image: url('img/bg.jpg');
   color: #fff;
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.8) 0 0 0 10000px inset;
 }
-img{
-  width: 100%;
-  max-width: 300px;
-}
 
-label {}
-
-h1 {
-  text-align: center;
-  margin-bottom: 100px;
-}
-
-
-h2 {
-  margin-bottom: 15px;
-}
-  
   /* Header-Stile */
   header {
     background-color: #333;
@@ -66,8 +49,8 @@ h2 {
   }
   
   nav ul li .dropdown-menu {
-    display: block; /* Versteckt das Dropdown-Menü standardmäßig */
-    position: absolute; /* Positioniert das Dropdown-Menü relativ zum Listenpunkt */
+    display: block; /* Versteckt Dropdown-Menü standardmässig */
+    position: absolute; /* Positioniert Dropdown-Menü relativ zum Listenpunkt */
     background-color: #EEE; /* Gibt dem Dropdown-Menü die gleiche Hintergrundfarbe wie der Navigation */
     padding: 0;
     margin-top: 10px;
@@ -124,7 +107,7 @@ h2 {
   }
   
   .grid-item {
-    border: 1px solid #333;
+    border: 1px solid #ccc;
     padding: 10px;
   }
   
