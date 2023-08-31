@@ -2,9 +2,8 @@
  
 ﻿# Mein Webprojekt
 
-﻿# Über das Projekt
-Dies ist ein Webprojekt, das im Rahmen einer Transferarbeit entwickelt wurde. 
-Es handelt sich um eine interaktive, benutzerfreundliche und mobiloptimierte Webseite mit einem Backend, das auf Node.js und MongoDB basiert.
+﻿# Über das Projekt 
+-Dies ist ein Webprojekt, das im Rahmen einer Transferarbeit entwickelt wurde. Es handelt sich um eine interaktive, benutzerfreundliche und mobiloptimierte Webseite mit einem Backend, das auf Node.js und MongoDB basiert.
 
 ﻿# Funktionen
 - Benutzer können Artikel lesen.
