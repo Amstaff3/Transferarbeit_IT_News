@@ -1,0 +1,82 @@
+Benutzerregistrierung und -anmeldung mit MongoDB einzurichten
+
+### 1. Voraussetzungen:
+
+- Installieren Sie [Node.js](https://nodejs.org/).
+- Installieren Sie [Docker](https://www.docker.com/).
+
+### 2. Einrichten des Projekts:
+
+Erstellen Sie einen neuen Ordner für Ihr Projekt und wechseln Sie in diesen Ordner:
+
+```bash
+mkdir myproject
+cd myproject
+```
+
+Initialisieren Sie ein neues Node.js-Projekt:
+
+```bash
+npm init -y
+```
+
+### 3. Installation der notwendigen Pakete:
+
+Installieren Sie Express, Mongoose (ein ODM für MongoDB), und einige andere nützliche Pakete:
+
+```bash
+npm install express mongoose bcryptjs jsonwebtoken
+```
+
+- `bcryptjs` wird zum Hashen von Passwörtern verwendet. 
+- `jsonwebtoken` wird zum Erstellen und Überprüfen von JWTs (JSON Web Tokens) für Authentifizierungszwecke verwendet.
+
+### 4. MongoDB mit Docker:
+
+Starten Sie eine MongoDB-Instanz mit Docker:
+
+```bash
+docker run --name mongodb -p 27017:27017 -d mongo
+```
+
+### 5. Erstellen Sie Ihre Serveranwendung:
+
+Sie können nun mit dem Schreiben Ihrer Serveranwendung beginnen. Sie werden Modelle für Benutzer erstellen, Routen für die Registrierung und Anmeldung hinzufügen und JWTs für die Authentifizierung verwenden.
+
+Das ist natürlich nur ein Anfang. In einer echten Anwendung würden Sie auch Fehlerbehandlung, Datenvalidierung, eine Mail-Bestätigung nach der Registrierung und viele andere Funktionen hinzufügen.
+
+### 6. Dockerisieren der Anwendung:
+
+Sobald Sie Ihre Anwendung geschrieben haben, können Sie sie in einen Docker-Container verpacken. Erstellen Sie eine `Dockerfile` in Ihrem Projektverzeichnis mit folgendem Inhalt:
+
+```Dockerfile
+FROM node:14
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 3000
+CMD [ "node", "yourServerFile.js" ]
+```
+
+Erstellen Sie das Docker-Image:
+
+```bash
+docker build -t myapp .
+```
+
+Und starten Sie den Container:
+
+```bash
+docker run -p 3000:3000 -d myapp
+```
+
+
+
+
+PW: bcryptjs MongoDB
