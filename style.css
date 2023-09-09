@@ -19,14 +19,11 @@ body {
     color: white;
     padding: 10px 0;
     text-align: center;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);  /* Schatten hinzugefügt für Tiefe */
   }
   
   /* Navigation-Stile */
   nav {
-    background-color: #ecf0f1;  /* Helle Graufarbe */
-    display: flex;  /* Flexbox für Navigation verwenden */
-    justify-content: center;  /* Inhalt horizontal zentrieren */
+    background-color: #EEE;
   }
   
   nav ul {
@@ -48,7 +45,7 @@ body {
   }
   
   nav ul li a:hover {
-    background-color: #bdc3c7;
+    background-color: #ddd;
   }
   
   nav ul li .dropdown-menu {
@@ -89,7 +86,6 @@ body {
     position: fixed;
     width: 100%;
     bottom: 0;
-    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1);  /* Schatten für Tiefe hinzugefügt */
   }
   
   footer a {
@@ -103,40 +99,16 @@ body {
     width: 100%;
     height: auto;
   }
-
-  .articles-container {
-    display: flex;
-    flex-wrap: wrap;  /* Erlaubt das Umbruchverhalten */
-    gap: 20px;  /* Abstand zwischen den Artikeln */
-    justify-content: space-between;  /* Gleichmäßiger Abstand zwischen den Artikeln */
-}
-
-article {
-    flex: 1 1 300px;  /* Flex-Grow, Flex-Shrink, Flex-Basis */
-    border: 1px solid #ccc;  /* Rand um jede Kachel */
-    padding: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Schatten für Tiefe */
-    transition: transform 0.3s ease;  /* Sanfter Übergang beim Überfahren */
-}
-
-article:hover {
-    transform: scale(1.05);  /* Vergrößert die Kachel leicht beim Überfahren */
-}
-
-
   /* Kategorien Kacheln und Farbe */
   .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1);  /* Schatten für Tiefe hinzugefügt */
   }
   
-  /*Kacheln*/
   .grid-item {
     border: 1px solid #ccc;
     padding: 10px;
-    background-color: #fff;  /* Weißer Hintergrund für die Kacheln */
   }
   
   .grid-item:hover {
