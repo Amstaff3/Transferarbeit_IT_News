@@ -59,10 +59,27 @@ nav ul li:hover .dropdown-menu {
     display: block;
 }
 
-.logo {
+h1 {
     text-align: center;
-    margin-bottom: 50px;
 }
+
+.logo {
+    display: flex;
+    justify-content: center; /* Horizontal zentrieren */
+    align-items: center; /* Vertikal zentrieren */
+    background-color: #ecf0f1; /* Farbe der Kachel */
+    padding: 20px; /* Abstand zwischen Bild und Kachelrand */
+    border: 1px solid #ccc; /* Rand um die Kachel */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für Tiefe */
+    max-width: 350px; /* Maximale Breite der Kachel */
+    margin: 20px auto; /* Zentriert die Kachel und gibt ihr oberen und unteren Abstand */
+}
+
+.logo img {
+    max-width: 100%; /* Bild an Kachelgrösse anpassen */
+    height: auto;
+}
+
 
 .main-wrapper {
     max-width: 650px;
