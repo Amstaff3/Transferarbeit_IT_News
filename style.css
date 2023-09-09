@@ -19,11 +19,14 @@ body {
     color: white;
     padding: 10px 0;
     text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);  /* Schatten hinzugefügt für Tiefe */
   }
   
   /* Navigation-Stile */
   nav {
-    background-color: #EEE;
+    background-color: #ecf0f1;  /* Helle Graufarbe */
+    display: flex;  /* Flexbox für Navigation verwenden */
+    justify-content: center;  /* Inhalt horizontal zentrieren */
   }
   
   nav ul {
@@ -45,7 +48,7 @@ body {
   }
   
   nav ul li a:hover {
-    background-color: #ddd;
+    background-color: #bdc3c7;
   }
   
   nav ul li .dropdown-menu {
@@ -86,6 +89,7 @@ body {
     position: fixed;
     width: 100%;
     bottom: 0;
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1);  /* Schatten für Tiefe hinzugefügt */
   }
   
   footer a {
@@ -104,11 +108,14 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1);  /* Schatten für Tiefe hinzugefügt */
   }
   
+  /*Kacheln*/
   .grid-item {
     border: 1px solid #ccc;
     padding: 10px;
+    background-color: #fff;  /* Weißer Hintergrund für die Kacheln */
   }
   
   .grid-item:hover {
