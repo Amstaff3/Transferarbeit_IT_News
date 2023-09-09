@@ -4,6 +4,140 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+    padding: 50px;
+    color: #fff;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.8) 0 0 0 10000px inset;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #bdc3c7;
+}
+
+nav ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #EEE;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li:hover .dropdown-menu {
+    display: block;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-wrapper {
+    max-width: 650px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 50px;
+}
+
+form div {
+    padding: 15px 0;
+}
+
+form div label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+form div input {
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+form div button {
+    cursor: pointer;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+.no-acc-register {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.no-acc-register button {
+    padding: 15px;
+    font-size: 18px;
+}
+
+.custom-modal {
+    display: none;
+    background-color: black;
+    box-shadow: rgba(255, 255, 255, 0.8) 0 0 1000px 1000px;
+    max-width: 650px;
+    margin: auto;
+    padding: 50px;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.custom-modal button#closeModal {
+    height: 20px;
+    width: 20px;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+/*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .main-wrapper {}
 
 body {
@@ -117,4 +251,4 @@ form ul li {
     position: absolute;
     right: 30px;
     top: 30px;
-}
+}*/
