@@ -1,20 +1,14 @@
 # Basisimage 
-FROM node:16 
+FROM node:18
 
 # Arbeitsverzeichnis festlegen
 WORKDIR /app  
 
 # Quellcode kopieren
-COPY package*.json ./
-
-# In Router-Verzeichnis wechseln
-WORKDIR /app/mongodb/router  
+COPY ..
 
 # Abhängigkeiten installieren
 RUN npm install
-
-# Kopieren lokalen Code in den Container
-COPY . .
 
 # Port freigeben
 EXPOSE 3000  
