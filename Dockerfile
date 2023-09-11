@@ -5,7 +5,7 @@ FROM node:18
 WORKDIR /app  
 
 # Quellcode kopieren
-COPY ..
+COPY . /app
 
 # Abhängigkeiten installieren
 RUN npm install

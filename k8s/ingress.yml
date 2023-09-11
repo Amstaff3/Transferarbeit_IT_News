@@ -1,8 +1,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: chat-ingress
-  namespace: teko7
+  name: mongodb-deployment
+  namespace: internetdienste-webseite-teko4
   generation: 1
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-prod
@@ -23,6 +23,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: chat-service
+                name: zeljko
                 port:
                   number: 3000

@@ -67,6 +67,21 @@ app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
 
+const mongoDBConnection =
+  process.env.MONGODB_CONNECTION ||
+  "mongodb://root:example@localhost:27017/?authMechanism=DEFAULT";
+
+
+// deliver static files from the client folder like css, js, images
+app.use(express.static("client"));
+// route for the homepage
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/Nachrichten.html");
+});
+
+
+
+
 /*const express = require('express');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
